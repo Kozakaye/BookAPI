@@ -3,4 +3,7 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
+    alias(libs.plugins.kotlin.kapt) apply false  // Add Kotlin Annotation Processing Tool
+    alias(libs.plugins.hilt) apply false  // Add Hilt plugin
+    alias(libs.plugins.google.services) apply false
 }
