@@ -14,7 +14,7 @@ import javax.inject.Singleton
 object RepositoryModule {
     @Provides
     @Singleton
-    fun getRepository(nytAPI: NytAPI): BookRepository {
+    fun provideRepository(nytAPI: NytAPI): BookRepository {
         return BookRepositoryImpl(nytAPI)
     }
 }
